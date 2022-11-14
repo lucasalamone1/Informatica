@@ -1,0 +1,64 @@
+body{
+
+    background-color: rgb(104, 117, 68);
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-box{
+
+    width: 400px;
+    background: rgba(60, 50, 50, 0.8);
+    margin: 12% auto;
+    box-shadow: 1px 0px 30px 10px rgba(174, 174, 174, 0.9); /*ultimo campo specifica opacità colore*/
+    color:  rgb(255, 255, 255);
+    padding: 40px 2px;
+}
+
+h1{
+
+    text-align: center;
+    margin-bottom: 100px;
+}
+.name{
+
+    padding-bottom: 20px;
+
+}
+.input-box{
+
+    margin: 30px auto;
+    width: 80%;         		/*larghezza box username/psw*/
+    border-bottom: 2px solid rgb(255, 255, 255); /*linea*/
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+}
+
+.input-box input{
+
+    width:80%; 
+    border: none;        		/*bordo del box username/psw*/
+    background: none;   		/*fa riferimento al box username/psw*/
+    color: rgb(254, 254, 254); 	/*colore input */
+}
+
+
+.input-box2 input{
+
+    margin: 30px auto;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: transparent;
+    color:white;
+    border-color: white;
+    border-radius: 25px;
+    
+}
+
+.sfondo2{
+
+    background-color: red;
+}
