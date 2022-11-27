@@ -51,36 +51,36 @@ function form($errNome,$errCognome,$errUser,$errEmail,$errCellulare,$errPassword
 
         <span class="errore"><?php echo $errNome;?></span>                                                      <!-- Errore che sara' visualizzato per il campo nome  -->
         <span class="erroreIndirizzo"><?php echo $errProvincia;?></span><br>                                    <!-- Errore che sara' visualizzato per il campo provincia  -->
-            <input class="input-nome" type="text" name="nome" value="<?=$Nome?>" placeholder="Nome *">          <!-- creo il campo nome-->
+        <input class="input-nome" type="text" name="nome" value="<?=$Nome?>" placeholder="Nome *">              <!-- creo il campo nome-->
                 
-            <input class="input-indirizzo" type="text" name="provincia" value="<?=$Provincia?>" placeholder="Provincia *"><br>  <!-- creo il campo provincia-->
+        <input class="input-indirizzo" type="text" name="provincia" value="<?=$Provincia?>" placeholder="Provincia *"><br>  <!-- creo il campo provincia-->
         
         <span class="errore"><?php echo $errCognome;?></span>                                                   <!-- Errore che sara' visualizzato per il campo cognome  -->
         <span class="erroreIndirizzo"><?php echo $errComune;?></span><br>                                       <!-- Errore che sara' visualizzato per il campo comune  -->
-            <input class="input-cognome" type="text" name="cognome" value="<?=$Cognome?>" placeholder="Cognome *">  <!-- creo il campo cognome -->
+        <input class="input-cognome" type="text" name="cognome" value="<?=$Cognome?>" placeholder="Cognome *">  <!-- creo il campo cognome -->
                 
-            <input class="input-indirizzo" type="text" name="comune" value="<?=$Comune?>" placeholder="Comune *">  <br> <!-- creo il campo comune -->
+        <input class="input-indirizzo" type="text" name="comune" value="<?=$Comune?>" placeholder="Comune *">  <br> <!-- creo il campo comune -->
 
         <span class="errore"><?php echo $errUser;?></span>                                                      <!-- Errore che sara' visualizzato per il campo username  -->
         <span class="erroreIndirizzo2"><?php echo $errCap;?></span><br>                                         <!-- Errore che sara' visualizzato per il campo cap  -->
-            <input class="input-username" type="text" name="username" value="<?=$User?>" placeholder="Username">    <!-- creo il campo username -->
+        <input class="input-username" type="text" name="username" value="<?=$User?>" placeholder="Username">    <!-- creo il campo username -->
 
-            <input class="input-indirizzo" type="text" name="cap" value="<?=$Cap?>"placeholder="Cap *"><br>         <!-- creo il campo cap -->
+        <input class="input-indirizzo" type="text" name="cap" value="<?=$Cap?>"placeholder="Cap *"><br>         <!-- creo il campo cap -->
 
                 
         <span class="errore"><?php echo $errCellulare;?></span>                                                 <!-- Errore che sara' visualizzato per il campo cellulare  -->
         <span class="erroreIndirizzo2"><?php echo $errVia;?></span><br>                                         <!-- Errore che sara' visualizzato per il campo via  -->
-            <input class="input-cellulare" type="tel" name="cellulare" value="<?=$Cellulare?>"placeholder="Cellulare">  
+        <input class="input-cellulare" type="tel" name="cellulare" value="<?=$Cellulare?>"placeholder="Cellulare">  
                 
-            <input class="input-indirizzo" type="text" name="via" value="<?=$Via?>" placeholder="Via *">  <br>      <!-- creo il campo via -->
+        <input class="input-indirizzo" type="text" name="via" value="<?=$Via?>" placeholder="Via *">  <br>      <!-- creo il campo via -->
 
-            <input class="input-data" type="date" name="data"><br>                                                  <!-- creo il campo data -->
+        <input class="input-data" type="date" name="data"><br>                                                  <!-- creo il campo data -->
                 
         <span class="errore"><?php echo $errEmail;?></span><br>                                                 <!-- Errore che sara' visualizzato per il campo email  -->
-                <input class="input-email" type="text" name="email" value="<?=$Email?>" placeholder="Email *"><br>  <!-- creo il campo email -->
+        <input class="input-email" type="text" name="email" value="<?=$Email?>" placeholder="Email *"><br>      <!-- creo il campo email -->
     
         <span class="errore"><?php echo $errPassword;?></span><br>                                              <!-- Errore che sara' visualizzato per il campo password  -->
-            <input class="input-password" type="password" name="psw" value="<?=$psd?>" placeholder="Password *">    <!-- creo il campo password -->    
+        <input class="input-password" type="password" name="psw" value="<?=$psd?>" placeholder="Password *">    <!-- creo il campo password -->    
                 
 
                 <hr> <!-- linea prima del login -->
