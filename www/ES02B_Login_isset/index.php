@@ -8,23 +8,19 @@
 <?php
     if(!isset($_POST['invia'])){
 ?>      
-        <div class="form-box">
+	<div class="form-box">
+	<h1> Richiesta credenziali </h1>
 
-        <h1> Richiesta credenziali </h1>
-            
-                <form action="index.php" method="POST">
-                    <input class="input-boxN" type="text" name="nome" placeholder="Username"><br>
-
-                    <input class="input-boxP" type="password" name="psw" placeholder="Password">
-            
-			<hr>
-
-            <div class="input-box2" align="center">
-                <br> <input type="submit" name="invia" value="LOGIN"></br>
-                </form>
-            </div>
-
-        </div>
+	<form action="index.php" method="POST">
+		<input class="input-boxN" type="text" name="nome" placeholder="Username"><br>
+		<input class="input-boxP" type="password" name="psw" placeholder="Password">
+		<hr>
+		<br> 
+		<div class="input-box2" align="center">
+		<input type="submit" name="invia" value="LOGIN"></br>
+		</div>
+	</form>
+	</div>
         
 <?php   }
 

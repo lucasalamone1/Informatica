@@ -11,9 +11,10 @@
 * @version 1.1 <data> <Descrivere le modifiche apportate>
 */
 
-session_start(); // Avvia la sessione php.
-$_POST['nome']="";
-$_POST['psw']="";
+session_start(); // Avvia la sessione php
+
+$user="";
+$psd="";
 ?>
 
 <!DOCTYPE html>
@@ -24,31 +25,47 @@ $_POST['psw']="";
 </head>
 
 <body>
+<?php
+if(!isset($_POST['invia'])){  
+               
+?>             
 
     <div class="form-box">
 
         <h1> Richiesta credenziali </h1>
             <div class="input-box">
-                <form action="Benvenuto.php" method="POST">
+                <form method="POST">
                     <input class="name" type="text" name="nome" placeholder="Username"><br>
-					<?php
-						$_SESSION['nome']=$_POST['nome'];
-					?>
 					
 					<input type="password" name="psw" placeholder="Password">
-					
-					<?php
-						$_SESSION['psw']=$_POST['psw'];
-					?>
-            </div>
+    </div>
 
-            <div class="input-box2" align="center" >
-                <br> <input type="submit" value="LOGIN"></br>
+            <div class="input-box2" align="center">
+                <br> <input type="submit" name="invia" value="LOGIN"></br>
                 </form>
             </div>
-<?php 		
-		
  
+<?php   }
+  else{
+
+    $user=$_POST['nome'];
+    $psd=$_POST['psw'];
+
+    if($user!="Luca"||$psd!="admin"){
+        
+        echo "<h2> Credenziali errate </h2>";
+        echo "<a href='login.php'>Login</a><br>"; 
+        echo "<a href='index.php'>Home</a>"; 
+        $_SESSION['nome']=false;
+    }
+        
+    else{
+        header("location:PaginaRiservata.php");
+        $_SESSION['nome']=true;
+    }
+        
+}
+		
 ?>
 </body>
 
