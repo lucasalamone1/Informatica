@@ -1,20 +1,8 @@
 <?php
-/** ****************************************************************************************
-* @file login.php
-* @brief <inserire una breve descrizione del modulo>
-* <specifiche del progetto>
-* <specifiche del collaudo>
-* 
-* @author <autore>
-* @date <data> 
-* @version 1.0 <data> <Descrivere le modifiche apportate>
-* @version 1.1 <data> <Descrivere le modifiche apportate>
-*/
+    session_start();                                // Questa funzione avvia una nuova sessione o riprende quella esistente.
 
-session_start(); // Avvia la sessione php
-
-$user="";
-$psd="";
+    $user="";
+    $psd="";
 ?>
 
 <!DOCTYPE html>
@@ -26,10 +14,8 @@ $psd="";
 
 <body>
 <?php
-if(!isset($_POST['invia'])){  
-               
+if(!isset($_POST['invia'])){    
 ?>             
-
     <div class="form-box">
 
         <h1> Richiesta credenziali </h1>
@@ -51,7 +37,7 @@ if(!isset($_POST['invia'])){
     $user=$_POST['nome'];
     $psd=$_POST['psw'];
 
-    if($user!="Luca"||$psd!="admin"){
+    if($user!="Luca"||$psd!="admin"){                       //  Se vengono inserite le credenziali errate la sessione verrà messa a FALSE
         
         echo "<h2> Credenziali errate </h2>";
         echo "<a href='login.php'>Login</a><br>"; 
@@ -59,8 +45,8 @@ if(!isset($_POST['invia'])){
         $_SESSION['nome']=false;
     }
         
-    else{
-        header("location:PaginaRiservata.php");
+    else{                                                   //  Se vengono inserite le credenziali corrette la sessione verrà messa a TRUE. 
+        header("location:PaginaRiservata.php");             //  Con la funzione header() sarà fatta una redirect a PaginaRiservata.php
         $_SESSION['nome']=true;
     }
         

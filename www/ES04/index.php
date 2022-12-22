@@ -1,11 +1,11 @@
 <?php
-	session_start();
+	session_start();	//	Questa funzione avvia una nuova sessione o riprende quella esistente.
 ?>
 
 <!DOCTYPE html>
 <head>
 
-<title> Benvenuto </title>
+<title> Homepage </title>
 </head>
 
 <body>
